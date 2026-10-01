@@ -1,0 +1,69 @@
+Practica de colas 
+
+1) Banco — Atención preferencial
+Un banco atiende clientes durante toda la jornada. Cada cliente tiene:
+Identificación
+Nombre
+Tipo de trámite
+Edad
+Condición de atención especial
+Número de turno
+Los clientes van llegando y reciben un turno.
+Sin embargo, el banco tiene una regla especial: las personas con atención preferencial deben ser atendidas antes que los demás clientes, respetando el orden en que llegaron entre las personas de su mismo grupo.
+El sistema debe permitir:
+Registrar un cliente.
+Consultar los clientes que están esperando.
+Llamar al siguiente cliente.
+Marcar un cliente como atendido.
+Cambiar un cliente de atención normal a preferencial cuando presente la documentación correspondiente.
+Cancelar un turno.
+Buscar un cliente por identificación.
+Consultar cuántas personas están esperando.
+Mostrar cuántos clientes normales y preferenciales están pendientes.
+Para analizar
+¿Qué debería ocurrir si un cliente que está esperando cambia su condición de atención?
+¿Qué ocurre si se intenta cancelar un cliente que ya fue atendido?
+
+
+2) Atención de clientes
+Un banco recibe clientes durante toda la jornada. Cada cliente obtiene un turno para realizar un trámite.
+Durante el día pueden llegar nuevos clientes, algunos pueden cancelar su turno, otros pueden modificar el trámite solicitado y los funcionarios van atendiendo a los clientes.
+El sistema debe permitir administrar toda la jornada y consultar el estado de cada cliente., ustedes deben determinar que acciones requieren 
+ 
+La clínica tiene inicialmente una matriz con los pacientes registrados durante la jornada.
+La matriz contiene información como:
+ID	Nombre	Edad	Servicio	Estado
+101	Ana	32	Medicina	Pendiente
+102	Carlos	67	Medicina	Pendiente
+103	Laura	25	Odontología	Pendiente
+104	Pedro	71	Medicina	Pendiente
+105	Marta	45	Odontología	Pendiente
+A partir de esta información, el sistema debe organizar el proceso de atención.
+Durante la jornada
+Los pacientes pueden:
+Ser enviados a la fila de atención.
+Ser atendidos.
+Cancelar su cita.
+Cambiar de servicio.
+Ser marcados como prioritarios.
+Ser retirados de la atención.
+Volver a solicitar atención.
+Cuando un paciente inicia atención, se debe guardar información que permita consultar posteriormente qué pacientes fueron atendidos.
+También pueden ocurrir situaciones en las que un paciente deba ser procesado antes que otro debido a una condición especial.
+El estudiante debe determinar:
+Qué información permanece en la matriz.
+Qué información debe manejarse como objetos.
+Qué información debe conservarse temporalmente.
+Qué procesos deben respetar el orden de llegada.
+Qué procesos requieren recuperar información en orden inverso.
+Cómo actualizar la información original después de una operación.
+Cómo evitar inconsistencias entre las estructuras.
+Resultado final
+El sistema debe mostrar:
+Pacientes registrados inicialmente. mostrarlos en un arreglo 
+Pacientes pendientes. mostrarlos en una pila ordenada en orden de llegada 
+Pacientes atendidos. mostrarlos en una cola 
+Pacientes cancelados. mostrarlos en una cola 
+Pacientes prioritarios. Mostrarlos en una cola 
+Historial de operaciones realizadas. mostrarlos en un arreglo ordenado
+ 
